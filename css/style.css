@@ -6,6 +6,10 @@
    box-sizing: border-box;
 
 }
+*::selection{
+    background-color: #0ca;
+    color: white;
+}
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -14,29 +18,17 @@ body{
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    
 }
-@media(min-width:768px){
-    .container{
-        width: 750px;
-    }
-   
-}
-@media(min-width:992px){
-    .container{
-        width: 970px;
-    }
-   
-}
-@media(min-width:1200px){
-    .container{
-        width: 1170px;
-    } 
-}
+
+
 /* End Global Rules*/
 /* Header Start*/
 .header{
     padding: 20px;
-
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 .container{
     width: 100%;
@@ -45,6 +37,8 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    
+
 }
 .container .links{
     position: relative;
@@ -110,8 +104,8 @@ body{
     flex-wrap: wrap;
  }
  .intro-logo{
-    height: 75px;
-    width: 120px;
+    height: 150px;
+    width: auto;
  }
  .intro-title{
     color: #0ca;
@@ -167,11 +161,14 @@ body{
  }
  .all{
     background-color: rgb(209, 250, 250);
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 30px;
+    padding-left: 20%;
+    padding-right: 20%; 
  }
  .biggest{
     padding: 30px;
@@ -183,14 +180,21 @@ body{
 .biggest p{
     color: #888;
 }
+.learn {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20px;
+   
+
+}
 .learn1{
     background-color: white;
-    width: 18.25em;
+    /*width: 18.25em;*/
     box-shadow: 0px 5px 25px rgba(1 1 1 / 15%);
     border-radius: 10px;
     padding: 15px;
-    margin: 15px;
-    height: 20em;   
+    /*argin: 15px;*/
+    margin-top: 20px;    /*height: 20em; */  
 }
 .flag{
     color: rgb(127, 247, 247);
@@ -199,30 +203,33 @@ body{
 }
 .learn2{
     background-color: white;
-    width: 18.25em;
+    /*width: 18.25em;*/
     box-shadow: 0px 5px 25px rgba(1 1 1 / 15%);
     border-radius: 10px;
     padding: 15px;
-    margin: 15px;
-    height: 15em;   
+    /*margin: 15px;*/
+    margin-bottom: 20px;
+    /*height: 15em; */  
 }
 .learn3{
     background-color: white;
-    width: 18.25em;
+    /*width: 18.25em;*/
     box-shadow: 0px 5px 25px rgba(1 1 1 / 15%);
     border-radius: 10px;
     padding: 15px;
-    margin: 15px;
-    height: 15em;   
+    /*margin: 15px;*/
+    margin-top: 20px;
+        /*height: 15em;   */
 }
 .learn4{
     background-color: white;
-    width: 18.25em;
+   /* width: 18.25em;*/
     box-shadow: 0px 5px 25px rgba(1 1 1 / 15%);
     border-radius: 10px;
     padding: 15px;
-    margin: 15px;
-    height: 15em;   
+    /*margin: 15px;*/
+    margin-bottom: 20px;
+   /* height: 15em;*/   
 }
 .txt h2{
     color: rgb(3, 202, 202);
@@ -530,3 +537,30 @@ footer .end p a:visited{
     cursor: pointer;
 }
 /* End Footer*/
+@media(min-width:768px){
+    .container{
+        width: 750px;
+    }
+
+    }
+@media(max-width:768px){
+ 
+    .all {
+            grid-template-columns: 1fr;
+        }
+        .learn{
+            grid-template-columns: 1fr;
+        }   
+   
+}
+@media(min-width:992px){
+    .container{
+        width: 970px;
+    }
+   
+}
+@media(min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+ }
