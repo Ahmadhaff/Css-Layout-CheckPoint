@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* Start Global Rules*/
+*{
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box; 
+   box-sizing: border-box;
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media(min-width:768px){
+    .container{
+        width: 750px;
+    }
+   
+}
+@media(min-width:992px){
+    .container{
+        width: 970px;
+    }
+   
+}
+@media(min-width:1200px){
+    .container{
+        width: 1170px;
+    } 
+}
+/* End Global Rules*/
+/* Header Start*/
+.header{
+    padding: 20px;
+
+}
+.container{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.container .links{
+    position: relative;
+}
+.about{
+    color: #0ca;
+}
+.creer{
+    color: #555;
+}
+.departments{
+    color: #555;
+}
+.creer:hover{
+    color: #0ca;
+}
+.departments:hover{
+    color: #0ca;
+}
+.container .links .navigation a{
+    text-decoration: none;
+    padding-left: 20px;
+    
+}
+.container .links ul{
+    position: absolute;
+    background-color: #fff;
+    width: 200px;
+    padding: 0;
+    margin: 0;
+    right: 0px;
+    top: calc(100% + 1px);
+    list-style: none;
+    display: none;
+}
+.header .container .links li:not(:last-child){
+    border-bottom: 1px solid #ddd;
+}
+.header .container .links ul li a{
+    text-decoration: none;
+    color: #555;
+    padding: 15px;
+    display: block;
+    transition: 0.5s;
+}
+.header .container .links ul li a:hover{
+    color: #0ca;
+    padding-left: 10px;
+}
+.header .container .links:hover ul{
+    display: block;
+}
+.container h1{
+    display: flex;
+    justify-content: center;
+}
+/*End Header*/
+/* Section Start*/
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+ }
+ .intro-logo{
+    height: 75px;
+    width: 120px;
+ }
+ .intro-title{
+    color: #0ca;
+    font-size: 40px;
+    font-weight: 700;
+ }
+ .intro-text{
+    display: flex;
+    flex-direction: row;
+    color: #888;
+    width: 900px;
+ }
+ .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+ }
+ .card1{
+    background-color: #0db;
+    width: 21.25em;
+    box-shadow: 0px 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    height: 15em;
+ }
+ .card2{
+    background-color: #48e;
+    width: 21.25em;
+    box-shadow: 0px 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    height: 15em;
+ }
+ .card3{
+    background-color: #223;
+    width: 21.25em;
+    box-shadow: 0px 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    height: 15em;
+ }
+ .icon{
+    font-size: 20px;
+    color: white;
+ }
+ .info{
+    color: white;
+    font-size: 20px;
+ }
+ .all{
+    background-color: rgb(209, 250, 250);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
+ }
+ .biggest{
+    padding: 30px;
+    top: 80px;
+ }
+.biggest h1{
+    color: #0ca;
+}
+.biggest p{
+    color: #888;
+}
+.learn1{
+    background-color: white;
+    width: 18.25em;
+    box-shadow: 0px 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    height: 20em;   
+}
+.flag{
+    color: rgb(127, 247, 247);
+    text-align: center;
+    font-size: 5em;
+}
+.learn2{
+    background-color: white;
+    width: 18.25em;
+    box-shadow: 0px 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    height: 15em;   
+}
+.learn3{
+    background-color: white;
+    width: 18.25em;
+    box-shadow: 0px 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    height: 15em;   
+}
+.learn4{
+    background-color: white;
+    width: 18.25em;
+    box-shadow: 0px 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    height: 15em;   
+}
+.txt h2{
+    color: rgb(3, 202, 202);
+    font-size: 1.1em;
+    font-size: 600;
+}
+.txt p{
+    color: #888;
+    font-weight: 400;
+}
+.improve .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.improve .content .top{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.content .top h2{
+    color: #0ca;
+}
+.content .top p{
+    color: #555;
+    width: 700px; ;
+}
+.content .pictures{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+/* Start Pic1*/
+.Warsaw{
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 8px;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    margin: 20px;
+    padding: 20px;
+    transition: 0.7s ease;
+}
+.Warsaw .Warsawpic{
+    width: 100%;
+}
+.Warsaw strong{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Warsaw strong span{
+    color: #555;
+}
+.Warsaw strong a{
+    color: white;
+    background-color: #48e;
+    padding: 4px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.Warsaw:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 5px 25px rgba(1 1 1 / 15%);
+}
+.Warsaw strong a:hover{
+    background-color: rgb(39, 99, 189);
+}
+/* End Pic1*/
+/* Start Pic2*/
+.Barcelone{
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 8px;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    margin: 20px;
+    padding: 20px;
+    transition: 0.7s ease;
+}
+.Barcelone .Barcelonepic{
+    width: 100%;
+}
+.Barcelone strong{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Barcelone strong span{
+    color: #555;
+}
+.Barcelone strong a{
+    color: white;
+    background-color: #48e;
+    padding: 4px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.Barcelone:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 5px 25px rgba(1 1 1 / 15%);
+}
+.Barcelone strong a:hover{
+    background-color: rgb(39, 99, 189);
+}
+/* E nd Pic2*/
+/* Start Pic3*/
+.Munich{
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 8px;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    margin: 20px;
+    padding: 20px;
+    transition: 0.7s ease;
+}
+.Munich .Munichpic{
+    width: 100%;
+}
+.Munich strong{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Munich strong span{
+    color: #555;
+}
+.Munich strong a{
+    color: white;
+    background-color: #48e;
+    padding: 4px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.Munich:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 5px 25px rgba(1 1 1 / 15%);
+}
+.Munich strong a:hover{
+    background-color: rgb(39, 99, 189);
+}
+/* End Pic3*/
+/* Start Pic4*/
+.Istanbul{
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 8px;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    margin: 20px;
+    padding: 20px;
+    transition: 0.7s ease;
+}
+.Istanbul .Istanbulpic{
+    width: 100%;
+}
+.Istanbul strong{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Istanbul strong span{
+    color: #555;
+}
+.Istanbul strong a{
+    color: white;
+    background-color: #48e;
+    padding: 4px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.Istanbul:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 5px 25px rgba(1 1 1 / 15%);
+}
+.Istanbul strong a:hover{
+    background-color: rgb(39, 99, 189);
+}
+/* End Pic4*/
+/* Start Pic5*/
+.Rome{
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 8px;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    margin: 20px;
+    padding: 20px;
+    transition: 0.7s ease;
+}
+.Rome .Romepic{
+    width: 100%;
+}
+.Rome strong{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Rome strong span{
+    color: #555;
+}
+.Rome strong a{
+    color: white;
+    background-color: #48e;
+    padding: 4px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.Rome:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 5px 25px rgba(1 1 1 / 15%);
+}
+.Rome strong a:hover{
+    background-color: rgb(39, 99, 189);
+}
+/* End Pic5*/
+/* Start Pic6*/
+.Paris{
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 8px;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    margin: 20px;
+    padding: 20px;
+    transition: 0.7s ease;
+}
+.Paris .Parispic{
+    width: 100%;
+}
+.Paris strong{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Paris strong span{
+    color: #555;
+}
+.Paris strong a{
+    color: white;
+    background-color: #48e;
+    padding: 4px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.Paris:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 5px 25px rgba(1 1 1 / 15%);
+}
+.Paris strong a:hover{
+    background-color: rgb(39, 99, 189);
+}
+/* End Pic6*/
+/* Start Footer*/
+.foot{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.foot h1{
+    font-size: 50px;
+}
+.foot a{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    background-color: #48e;
+    border-radius: 10px;
+    height: auto;
+    width: auto;
+    padding: 10px;
+}
+.foot a:hover{
+    background-color:rgb(39, 99, 189) ;
+}
+footer .end{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+footer .end p{
+    color: #888;
+}
+footer .end p a{
+    text-decoration: none;
+}
+footer .end p a:visited{
+    text-decoration:underline;
+    cursor: pointer;
+}
+/* End Footer*/
